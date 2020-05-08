@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,600');
+
+body {
+    background: #e6e6e6;
+    columns: #000000;
+    font-family: 'Montserrat';
+    margin:0;
+    height: 100%;
+    width: 100%;
+}
+#menu{
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    background-color: #f3f2f1;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: #555555;
+    text-align: center;
+    font-size: small;
+    font-weight: 600;
+    padding: 6px 10px;
+    margin-right: 2px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #fafafa;
+  }
+
+  .active {
+    border-bottom: 3px solid #2b579a;
+  }
+
+  #submenu{
+    background-color: #f3f2f1;
+    padding: 8px 10px;
+    top: 40px;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    height: 70px;
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .submenuItem{
+    top: 40px;
+    position: fixed;
+    left: 90%;
+    padding: 5px;
+    font-weight: 200;
+  }
+
+/* Contenu des pages */
+
+#mainContent{
+    background-color: #e6e6e6;
+    height: 700px;
+    margin: 0;
+    margin-top: 110px;
+}
+
+.element{
+    display: none;
+    background-color: #e6e6e6;
+    padding: 3%;
+    width: 100%;
+}
+
+.element:first-child{
+    display: block;
+}
+
+#table > tbody > tr > td, #tableRDV > tbody > tr > td, #table2 > tbody > tr > td{
+  padding: 10px;
+  border: 1px solid #555555;
+}
+
+#table > tbody > tr:hover, #tableRDV > tbody > tr:hover, #table2 > tbody > tr:hover{
+  background-color: #e6e6e6;
+}
+
+#listeDesRdv {
+  height: 835px;
+  background-color: #f3f2f1;
+  width: 40%;
+  top: 110px;
+  right: 0;
+  position: absolute;
+}
+
+#listeDesPatient {
+  height: 835px;
+  background-color: #f3f2f1;
+  width: 60%;
+  top: 110px;
+  right: 0;
+  position: absolute;
+}
+
+#listeRdv1{
+  height: 700px;
+  background-color: #f3f2f1;
+  width: 100%;
+  top: 110px;
+  right: 0;
+  position: absolute;
+}
+
+#affichageRDV, #affichageRDV1, #affichagePatient{
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.aide{
+  width: 100%;
+  height: 1000px;
+  background-color: #e6e6e6;
+  z-index: 10;
+}
